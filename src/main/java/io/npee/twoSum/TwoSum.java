@@ -1,4 +1,4 @@
-package io.npee;
+package io.npee.twoSum;
 
 import java.util.Arrays;
 
