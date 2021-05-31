@@ -1,4 +1,4 @@
-package io.npee.palindromeNumber;
+package io.npee.palindromenumber;
 
 public class PalindromeNumber {
     public static boolean isPalindrome(int x) {

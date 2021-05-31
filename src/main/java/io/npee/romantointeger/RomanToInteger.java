@@ -1,4 +1,4 @@
-package io.npee.romanToInteger;
+package io.npee.romantointeger;
 
 import java.util.LinkedList;
 import java.util.Queue;

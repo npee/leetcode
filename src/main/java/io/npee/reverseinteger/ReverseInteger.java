@@ -1,4 +1,4 @@
-package io.npee.reverseInteger;
+package io.npee.reverseinteger;
 
 public class ReverseInteger {
     public static int reverse(int x) {
