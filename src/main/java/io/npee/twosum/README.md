@@ -1,4 +1,5 @@
 # 1. Two Sum
+## Code
 ```java
 class Solution {
     public static int[] twoSum(int[] nums, int target) {
@@ -16,3 +17,7 @@ class Solution {
     }
 }
 ```
+## Complexity
+### Time complexity
+for: O(n) * map.containsKey: O(log n) = O(n log n)
+### Space complexity
