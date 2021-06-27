@@ -1,10 +1,17 @@
 package io.npee.numberofmatchingsubsequences;
 
+import java.util.*;
+
 public class NumberOfMatchingSubsequences {
-    // 41/52 Time Limit Exceeded
+    // 통과는 했는데 Runtime이 불안정하다.
     public static int numMatchingSubseq(String s, String[] words) {
         int res = 0;
+        Map<String, Integer> wordMap = new HashMap<>();
         for (String word : words) {
+            wordMap.put(word, wordMap.containsKey(word)? wordMap.get(word) + 1: 1);
+        }
+
+        for (String word : wordMap.keySet()) {
             boolean isSub = true;
             String copy = s;
             for (int i = 0; i < word.length(); i++) {
@@ -17,7 +24,7 @@ public class NumberOfMatchingSubsequences {
                 }
             }
             if (isSub) {
-                res++;
+                res += wordMap.get(word);
             }
         }
         return res;
