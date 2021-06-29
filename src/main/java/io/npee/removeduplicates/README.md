@@ -1,4 +1,4 @@
-# 342. Power of Four
+# 1047. Remove All Adjacent Duplicates In String
 ## Code
 ```java
 public class Solution {
