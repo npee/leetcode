@@ -21,8 +21,6 @@ public class Solution {
 ![img.png](img.png)
 ## Complexity
 ### Time complexity
-num > 0 : O(1)  
-num & (num - 1) == 0 : O(n)  
-num & 0x55555555 : O(n)  
+for chars.length => 0(n)
 => O(n)
 ### Space complexity
