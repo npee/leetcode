@@ -1,6 +1,4 @@
-package io.npee.rotateddigits;
-
-import java.util.*;
+package io.npee._00788_rotateddigits;
 
 public class RotatedDigits {
     public static int rotatedDigits(int n) {

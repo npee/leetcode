@@ -1,4 +1,4 @@
-package io.npee.poweroffour;
+package io.npee._00342_poweroffour;
 
 import java.util.Scanner;
 

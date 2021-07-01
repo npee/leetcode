@@ -1,11 +1,9 @@
-package io.npee.jewelsandstones;
+package io.npee._00771_jewelsandstones;
 
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
 
-public class JewelsAndStones {
-    // 771. Jewels And Stones
+public class Solution {
     public static int numJewelsInStones(String jewels, String stones) {
         int output = 0;
         Set<Character> jewelType = new HashSet<>();
@@ -19,14 +17,6 @@ public class JewelsAndStones {
     }
 
     public static void main(String[] args) {
-        // Input: jewels = "aA", stones = "aAAbbbb"
-        // Output: 3
-        Scanner s = new Scanner(System.in);
-        System.out.print("Input(Jewels) > ");
-        String jewels = s.nextLine();
-        System.out.print("Input(Stones) > ");
-        String stones = s.nextLine();
-
-        System.out.println("Output: " + numJewelsInStones(jewels, stones));
+        System.out.println("Output: " + numJewelsInStones("abB", "aabbbBaba"));
     }
 }

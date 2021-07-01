@@ -1,4 +1,4 @@
-package io.npee.addtwonumbers;
+package io.npee._00002_addtwonumbers;
 
 import java.util.Arrays;
 import java.util.Stack;

@@ -1,4 +1,4 @@
-package io.npee.palindromenumber;
+package io.npee._00009_palindromenumber;
 
 import java.util.Scanner;
 

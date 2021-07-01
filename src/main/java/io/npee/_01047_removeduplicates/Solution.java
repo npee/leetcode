@@ -1,4 +1,4 @@
-package io.npee.removeduplicates;
+package io.npee._01047_removeduplicates;
 
 public class Solution {
     public static String removeDuplicates(String S) {

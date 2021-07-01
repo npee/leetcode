@@ -1,6 +1,4 @@
-package io.npee.removeduplicates;
-
-import java.util.Arrays;
+package io.npee._01047_removeduplicates;
 
 public class RemoveDuplicates {
     public static String removeDuplicates(String s) {

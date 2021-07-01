@@ -1,9 +1,9 @@
-package io.npee.graycode;
+package io.npee._00089_graycode;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class Solution {
+public class GrayCode {
     public static List<Integer> grayCode(int n) {
         Integer[] arr = new Integer[1 << n];
         for (int i = 0; i < arr.length; i++) {

@@ -1,4 +1,4 @@
-package io.npee.rotateddigits;
+package io.npee._00788_rotateddigits;
 
 import java.util.Arrays;
 import java.util.HashSet;
