@@ -16,11 +16,11 @@ package io.npee._00129_sumroottoleafnumbers;
  * }
  */
 class Solution {
-    public int sumNumbers(TreeNode root) {
+    public int sumNumbers(SumRootToLeafNumbers.TreeNode root) {
         return sum(root, 0);
     }
 
-    public int sum(TreeNode node, int sum) {
+    public int sum(SumRootToLeafNumbers.TreeNode node, int sum) {
 
         if (node == null) {
             return 0;
@@ -32,4 +32,5 @@ class Solution {
 
         return sum(node.left, sum * 10 + node.val) + sum(node.right, sum * 10 + node.val);
     }
+
 }
