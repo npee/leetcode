@@ -1,8 +1,6 @@
 package io.npee._00404_sumofleftleaves;
 
 
-import javafx.util.Pair;
-
 import java.util.*;
 
 public class SumOfLeftLeaves {
@@ -41,13 +39,14 @@ public class SumOfLeftLeaves {
     public static int sumOfLeftLeaves2(TreeNode root) {
         if (root == null) return 0;
 
-        Stack<Pair<TreeNode, Boolean>> stack = new Stack<>();
-        stack.push(new Pair<>(root, false));
+
+        Stack<Map.Entry<TreeNode,Boolean>> stack = new Stack<>();
+        stack.push(Pair.of(root, false));
 
         int res = 0;
 
         while (!stack.isEmpty()) {
-            Pair<TreeNode, Boolean> current = stack.pop();
+            Map.Entry<TreeNode, Boolean> current = stack.pop();
             TreeNode node = current.getKey();
             boolean isLeft = current.getValue();
 
@@ -57,11 +56,11 @@ public class SumOfLeftLeaves {
             }
 
             if (node.right != null) {
-                stack.push(new Pair<>(node.right, false));
+                stack.push(Pair.of(node.right, false));
             }
 
             if (node.left != null) {
-                stack.push(new Pair<>(node.left, true));
+                stack.push(Pair.of(node.left, true));
             }
         }
 
@@ -81,13 +80,13 @@ public class SumOfLeftLeaves {
     public static int sumOfLeftLeaves3(TreeNode root) {
         if (root == null) return 0;
 
-        Queue<Pair<TreeNode, Boolean>> queue = new LinkedList<>();
-        queue.offer(new Pair<>(root, false));
+        Queue<Map.Entry<TreeNode, Boolean>> queue = new LinkedList<>();
+        queue.offer(Pair.of(root, false));
 
         int res = 0;
 
         while (!queue.isEmpty()) {
-            Pair<TreeNode, Boolean> current = queue.poll();
+            Map.Entry<TreeNode, Boolean> current = queue.poll();
             TreeNode node = current.getKey();
             boolean isLeft = current.getValue();
 
@@ -96,11 +95,11 @@ public class SumOfLeftLeaves {
             }
 
             if (node.left != null) {
-                queue.offer(new Pair<>(node.left, true));
+                queue.offer(Pair.of(node.left, true));
             }
 
             if (node.right != null) {
-                queue.offer(new Pair<>(node.right, false));
+                queue.offer(Pair.of(node.right, false));
             }
         }
 
@@ -129,6 +128,12 @@ public class SumOfLeftLeaves {
             this.val = val;
             this.left = left;
             this.right = right;
+        }
+    }
+
+    static class Pair {
+        public static <T, U> Map.Entry<T, U> of(T first, U second) {
+            return new AbstractMap.SimpleEntry<>(first, second);
         }
     }
 
